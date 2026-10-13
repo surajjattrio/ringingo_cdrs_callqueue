@@ -1,0 +1,12 @@
+[Unit]
+Description=To change In test buffer
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/mnt/myenv/bin/python3.10 /usr/local/freeswitch/scripts/cdrs/cdrs_posting.py
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target
+

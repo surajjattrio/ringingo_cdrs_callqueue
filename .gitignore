@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+get-pip.py
+*.bak*
+*.old
+temp_output.txt

@@ -1,0 +1,12 @@
+cd /usr/local/freeswitch/scripts/cdrs/
+cp cdrpost.service /etc/systemd/system/cdrpost.service
+chmod +x /etc/systemd/system/cdrpost.service
+systemctl daemon-reload
+systemctl start cdrpost.service
+systemctl enable cdrpost.service
+systemctl status cdrpost.service
+systemctl status cdrpost.service
+systemctl status cdrpost.service
+systemctl status cdrpost.service
+tail -f /var/log/syslog
+systemctl status cdrpost.service

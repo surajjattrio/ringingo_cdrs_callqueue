@@ -1,0 +1,13 @@
+[Unit]
+Description=Calls Realtime Event Tracking Service
+After=multi-user.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/mnt/myenv/bin/python3.10 /usr/local/freeswitch/scripts/cdrs/call_agent.py
+
+[Install]
+WantedBy=multi-user.target
+
